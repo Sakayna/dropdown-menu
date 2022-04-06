@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Toggle DropDown Menu</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  	$(".hamburger_btn").click(function(){
+			  $(this).toggleClass("active");
+			  $(".menu").toggleClass("active");
+			});
+		});
+	</script>
+</head>
+<body>
+	
+<div class="wrapper">
+  <div class="container">
+    <div class="hamburger_btn">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">profile</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">maps</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
